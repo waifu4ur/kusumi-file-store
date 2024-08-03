@@ -22,17 +22,17 @@ API_ID = int(environ.get("API_ID", "27526328"))
 API_HASH = environ.get("API_HASH", "db231e73712db0b6397f624a75a760f8")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7270620723:AAH80-ii-aQTl2xTUG0N4VM5G5iyndCj5Ok")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+PICS = (environ.get('PICS', 'https://graph.org/file/1d5fb52323a5b2ec98b5c.jpg')).split() # Bot Start Picture
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1582227872 6095034047').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Huofilebot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://accha:phir@cluster0.dwgvv5h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-CDB_NAME = environ.get("CDB_NAME", "")
+CDB_NAME = environ.get("CDB_NAME", "Cluster0")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "mongodb+srv://accha:phir@cluster0.dm1k9xf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
